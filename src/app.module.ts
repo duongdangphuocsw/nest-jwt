@@ -15,9 +15,7 @@ dotenv.config();
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      ssl: {
-        rejectUnauthorized: false,
-      },
+
       host: process.env.DB_HOST,
       port: Number.parseInt(process.env.DB_PORT),
       username: process.env.DB_USERNAME,
