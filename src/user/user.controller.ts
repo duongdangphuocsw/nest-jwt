@@ -70,4 +70,9 @@ export class UserController {
   delete(@Param('id') id: string) {
     return this.userService.remove(+id);
   }
+
+  // @Patch('/update-current-user')
+  // updateCurrentUser(@Req() request: Request, @Body() body: UpdateUserDto) {
+  //   return this.userService.updateCurrentUser(request, body);
+  // }
 }
