@@ -93,13 +93,4 @@ export class UserService {
     return this.usersRepository.save(user);
   }
 
-  // async updateCurrentUser(@Req() request: Request, attrs: Partial<User>) {
-  //   // const userExist = await this.usersRepository.findOneBy({});s
-
-  //   if (!user) throw new NotFoundException('No user with that id');
-
-  //   Object.assign(user, attrs);
-
-  //   return this.usersRepository.save(user);
-  // }
 }

@@ -14,14 +14,15 @@ dotenv.config();
 @Module({
   imports: [
     TypeOrmModule.forRoot({
-      type: 'postgres',
+      type: 'sqlite',
+      database: 'db.sqlite',
 
-      host: process.env.DB_HOST,
-      port: Number.parseInt(process.env.DB_PORT),
-      username: process.env.DB_USERNAME,
-      password: process.env.DB_PASSWORD,
-      database: process.env.DB_NAME,
-      url: process.env.DATABASE_URL,
+      // host: process.env.DB_HOST,
+      // port: Number.parseInt(process.env.DB_PORT),
+      // username: process.env.DB_USERNAME,
+      // password: process.env.DB_PASSWORD,
+      // database: process.env.DB_NAME,
+      // url: process.env.DATABASE_URL,
       entities: [User],
       synchronize: true,
     }),
